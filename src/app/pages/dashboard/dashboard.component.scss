@@ -1,0 +1,36 @@
+.container
+{
+    background-color: #836A6A;
+    min-height: 100vh;
+}
+
+.image-container {
+    display: flex;
+     
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .image {
+    width: 100px; 
+  }
+  
+  .center {
+    margin: 0 auto; 
+  }
+
+  .image-item {
+    display: flex;
+    flex-direction: column; 
+    
+  }
+  
+  .image-item img {
+    width: 100px; 
+  }
+  
+  .image-item p {
+    color: white;
+    margin-top: 8px; 
+  }
+  

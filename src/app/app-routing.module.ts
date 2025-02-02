@@ -1,7 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ViewPantryComponent } from './pages/view-pantry/view-pantry.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+
+
+  {path:'', component:LandingPageComponent},
+  {path:'dashboard', component: DashboardComponent},
+  {path:'view-pantry', component: ViewPantryComponent},
+  {path: '**', redirectTo: '', pathMatch: 'full' }
+  
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

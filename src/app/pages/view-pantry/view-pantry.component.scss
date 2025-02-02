@@ -1,0 +1,36 @@
+.styled-table {
+    width: 100%; 
+    table-layout: fixed; 
+    border-collapse: collapse; 
+  }
+  
+  .styled-table th, .styled-table td {
+    border: none; 
+    padding: 10px;
+    text-align: left;
+    width: 33.33%; 
+  }
+
+  .green-background {
+    background-color: #65cb7d !important;
+  }
+  
+  .amber-background {
+    background-color: #d5b345 !important; 
+  }
+  
+  .red-background {
+    background-color: #e24c58 !important; 
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
