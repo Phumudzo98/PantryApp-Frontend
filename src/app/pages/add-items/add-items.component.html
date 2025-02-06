@@ -1,1 +1,47 @@
-<p>add-items works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div style="margin-top: 5%; margin-left: 3%;">
+                <div style="margin-bottom: 4%;">
+                    <img src="Arrow left.png" (click)="returnHome()">
+                </div>
+
+                <p>Add Items</p>
+                <hr>
+
+                <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+                    <div formArrayName="products">
+                        <div *ngFor="let product of products.controls; let i = index" [formGroupName]="i" class="product">
+                            <label>Product name:</label>
+                            <input type="text" formControlName="productName">
+
+                            <label>Quantity:</label>
+                            <input type="text" formControlName="quantity">
+
+                            <label>Expiry Date:</label>
+                            <input type="date" formControlName="expiryDate">
+
+                            <label>Category:</label>
+                            <input type="text" formControlName="category">
+
+                            <label>Weight/Litres:</label>
+                            <input type="text" formControlName="weight">
+
+                            <label>Barcode:</label>
+                            <input type="text" formControlName="barcode">
+
+
+                            <button type="button" (click)="removeProduct(i)" *ngIf="products.length > 1">
+                                Remove
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="button" (click)="addProduct()">Add Another Product</button><br>
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

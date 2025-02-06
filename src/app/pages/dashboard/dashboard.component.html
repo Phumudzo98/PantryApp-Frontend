@@ -10,22 +10,21 @@
                 <img src="/shopping.png">
                 <p style="color: white; margin-top: 2%;">Shopping list</p>
             </div>
-            <div class="image-container">
-                <div class="image-item">
+            <div class="image-container" style="margin-top: 10%;">
+                <div class="image-item" (click)="addItem()">
                     <img src="/add.png" alt="Add" style="width: 60%;">
                     <p>Add Item(s)</p>
                 </div>
-                
-                  <div class="image-item center">
-                    <img src="/view.png" alt="View" style="margin-right: 45%;">
+            
+                <div class="image-item center-item" style="margin-right: 3%;" (click)="ViewPantry()">  
+                    <img src="/view.png" alt="View">
                     <p>View Pantry</p>
-                  </div>
-                
-                  <div class="image-item">
+                </div>
+            
+                <div class="image-item">
                     <img src="/expiry.png" alt="Expiry" style="width: 100%;">
                     <p>Expiring</p>
-                  </div>
-
+                </div>
             </div>
             <div  style="text-align: center;margin-top: 10%">
                 <img src="/ai recipe.png">

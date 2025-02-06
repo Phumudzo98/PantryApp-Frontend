@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="mb-3">
+                <img src="Arrow left.png" class="arrow-icon">
+                <p class="ms-2 mb-0">Generate Recipe</p>
+            </div>
+            <div>
+                <textarea class="recipe-textarea" [(ngModel)]="recipeText" placeholder="Type your recipe here..." readonly></textarea>
+            </div>
+            <button class="generate-btn" (click)="generateRecipe()" [disabled]="loading">
+                {{ loading ? 'Generating...' : 'Generate Recipe' }}
+            </button>
+        </div>
+    </div>
+</div>

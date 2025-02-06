@@ -4,26 +4,28 @@
     min-height: 100vh;
 }
 
+
+
 .image-container {
     display: flex;
-     
-    align-items: center;
-    gap: 10px; 
+    justify-content: center;  
+    align-items: center;  
+    gap: 40px;
   }
   
   .image {
     width: 100px; 
   }
   
-  .center {
-    margin: 0 auto; 
-  }
 
+ 
   .image-item {
-    display: flex;
-    flex-direction: column; 
-    
-  }
+    text-align: center;
+}
+
+.center-item {
+    transform: scale(1.1); 
+}
   
   .image-item img {
     width: 100px; 
