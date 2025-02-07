@@ -1,6 +1,7 @@
 
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { log } from 'console';
 
 @Component({
@@ -14,7 +15,7 @@ export class GenerateRecipeComponent{
   loading: boolean = false; 
   apiUrl: string = 'http://localhost:8080/generate'; 
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   generateRecipe() {
     this.loading = true;
@@ -35,6 +36,11 @@ export class GenerateRecipeComponent{
         this.loading = false;
       }
     });
+  }
+
+  back()
+  {
+    this.router.navigate(['/dashboard'])
   }
   
 

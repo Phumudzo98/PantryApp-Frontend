@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-view-pantry',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './view-pantry.component.scss'
 })
 export class ViewPantryComponent {
+
+  constructor(private router: Router){}
 
   pantryItems = [
     { name: 'Apple', category: 'Fruits', qty: 5, daysLeft: 10 },
@@ -26,6 +29,11 @@ export class ViewPantryComponent {
     } else {
       return 'red-background'; 
     }
+  }
+
+  back()
+  {
+    this.router.navigate(['/dashboard'])
   }
 
 }

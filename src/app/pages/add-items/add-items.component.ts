@@ -64,4 +64,9 @@ export class AddItemsComponent {
     });
   }
 
+  back()
+  {
+    this.router.navigate(['/dashboard'])
+  }
+
 }

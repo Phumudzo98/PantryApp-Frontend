@@ -21,4 +21,9 @@ export class DashboardComponent {
     this.router.navigate(['/view-pantry'])
   }
 
+  generateRecipe()
+  {
+    this.router.navigate(['/generate-recipe'])
+  }
+
 }
